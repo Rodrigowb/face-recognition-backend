@@ -37,6 +37,7 @@ let expressionsController = {
       .then(result => response.json(result))
   },
   // Delete (D)
+  // TODO: replace to deleteOne using the id
   deleteByDatetime(request, response) {
     expressionsModel
       .deleteOne(request.params)

@@ -12,10 +12,11 @@ router.post('/expressions', expressionsController.create);
 router.get('/expressions', expressionsController.getAll);
 router.get('/expressions/datetime/:datetime', expressionsController.getByDatetime);
 router.get('/expressions/emotion/:emotion', expressionsController.getByEmotion);
-router.checkout('/expressions/userid/:userid', expressionsController.getByUserId);
+router.get('/expressions/userid/:userid', expressionsController.getByUserId);
 // PUT
 router.put('/expressions/userid/:userid', expressionsController.updateByUserId);
 // DELETE
+// TODO: delete first
 router.delete('/expressions/datetime/:datetime', expressionsController.deleteByDatetime);
 router.delete('/expressions/userid/:userid', expressionsController.deleteByUserId);
 
