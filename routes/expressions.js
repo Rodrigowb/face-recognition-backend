@@ -14,7 +14,10 @@ router.get('/expressions/datetime/:datetime', controller.getByDatetime);
 router.get('/expressions/emotion/:emotion', controller.getByEmotion);
 router.checkout('/expressions/userid/:userid', controller.getByUserId);
 // PUT
-router.put('expressions/userid/:userid', controller.updateByUserId);
+router.put('/expressions/userid/:userid', controller.updateByUserId);
 // DELETE
 router.delete('/expressions/datetime/:datetime', controller.deleteByDatetime);
 router.delete('/expressions/userid/:userid', controller.deleteByUserId);
+
+// Export controller
+export default router;
