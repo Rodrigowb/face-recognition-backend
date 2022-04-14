@@ -22,12 +22,12 @@ let dataController = {
   },
   getByFirstName(request, response) {
     usersModel
-      .find({ firstName: request.params.firstName })
+      .find({ firstname: request.params.firstname })
       .then(result => response.json(result))
   },
   getByLastName(request, response) {
     usersModel
-      .find({ lastName: request.params.lastName })
+      .find({ lastname: request.params.lastname })
       .then(result => response.json(result))
   },
   getByPassword(request, response) {

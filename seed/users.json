@@ -1,14 +1,14 @@
 [
   {
     "email": "rodrigo@yahoo.com",
-    "firstName": "Rodrigo",
-    "lastName": "Wanderley",
+    "firstname": "Rodrigo",
+    "lastname": "Wanderley",
     "password": "mypassword123"
   },
   {
     "email": "ga@student.com",
-    "firstName": "General",
-    "lastName": "assembly",
-    "password": "ga9089"
+    "firstname": "General",
+    "lastname": "assembly",
+    "password": "ga9089000000"
   }
 ]

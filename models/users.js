@@ -9,10 +9,10 @@ let Users = new Schema({
   "email": {
     type: String,
   },
-  "firstName": {
+  "firstname": {
     type: String,
   },
-  "lastName": {
+  "lastname": {
     type: String,
   },
   "password": {
