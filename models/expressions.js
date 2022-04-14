@@ -1,3 +1,4 @@
+// TODO: connect userID to the user model
 // Import libraries
 import mongoose from "mongoose"
 
@@ -6,7 +7,15 @@ const Schema = mongoose.Schema
 
 // Create the schema for the model
 let Expressions = new Schema({
-  // TODO: define variables
+  "datetime": {
+    type: Date,
+  },
+  "emotion": {
+    type: String,
+  },
+  "userId": {
+    type: String,
+  }
 })
 
 // Create a model

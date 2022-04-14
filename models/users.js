@@ -6,7 +6,18 @@ const Schema = mongoose.Schema
 
 // Create the schema for the model
 let Users = new Schema({
-  // TODO: define variables
+  "email": {
+    type: String,
+  },
+  "firstName": {
+    type: String,
+  },
+  "lastName": {
+    type: String,
+  },
+  "password": {
+    type: String,
+  }
 })
 
 // Create a model
