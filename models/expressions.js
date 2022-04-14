@@ -20,7 +20,7 @@ let Expressions = new Schema({
 })
 
 // Create a model
-let expressionsModel = mongoose.model("expressionsModel", Expressions)
+let expressionsModel = mongoose.model("expressionsModel", Expressions);
 
 // Export model
-export default expressionsModel
+export default expressionsModel;

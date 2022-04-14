@@ -1,23 +1,23 @@
 // Import router and controllers
 import { Router } from "express";
-import { expressionsController as controller } from '../controllers/expressions.js'
+import expressionsController from '../controllers/expressions.js'
 
 // Create a new router
 const router = Router()
 
 // Create the middlewares routers
 // POST
-router.post('/expressions', controller.create);
+router.post('/expressions', expressionsController.create);
 // GET
-router.get('/expressions', controller.getAll);
-router.get('/expressions/datetime/:datetime', controller.getByDatetime);
-router.get('/expressions/emotion/:emotion', controller.getByEmotion);
-router.checkout('/expressions/userid/:userid', controller.getByUserId);
+router.get('/expressions', expressionsController.getAll);
+router.get('/expressions/datetime/:datetime', expressionsController.getByDatetime);
+router.get('/expressions/emotion/:emotion', expressionsController.getByEmotion);
+router.checkout('/expressions/userid/:userid', expressionsController.getByUserId);
 // PUT
-router.put('/expressions/userid/:userid', controller.updateByUserId);
+router.put('/expressions/userid/:userid', expressionsController.updateByUserId);
 // DELETE
-router.delete('/expressions/datetime/:datetime', controller.deleteByDatetime);
-router.delete('/expressions/userid/:userid', controller.deleteByUserId);
+router.delete('/expressions/datetime/:datetime', expressionsController.deleteByDatetime);
+router.delete('/expressions/userid/:userid', expressionsController.deleteByUserId);
 
 // Export controller
 export default router;
