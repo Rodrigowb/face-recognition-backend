@@ -1,8 +1,8 @@
 // Import the model
-import { expressionsModel as model } from './expressions.js'
+import { expressionsModel as model } from '../models/expressions.js'
 
 // Create the crud controller for the API
-let expressionsControllers = {
+let expressionsController = {
   // Create (C)
   create(request, response) {
     model
@@ -50,4 +50,4 @@ let expressionsControllers = {
 }
 
 // Export controller
-export default expressionsControllers
+export default expressionsController
