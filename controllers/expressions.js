@@ -48,3 +48,6 @@ let expressionsControllers = {
       .then(result => response.json(result))
   }
 }
+
+// Export controller
+export default expressionsControllers
