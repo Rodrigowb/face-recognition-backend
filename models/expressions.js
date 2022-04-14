@@ -1,6 +1,7 @@
 // TODO: connect userID to the user model
 // Import libraries
 import mongoose from "mongoose"
+import usersModel from "./users.js"
 
 // Create a schema
 const Schema = mongoose.Schema
@@ -14,7 +15,8 @@ let Expressions = new Schema({
     type: String,
   },
   "userId": {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: usersModel
   }
 })
 
