@@ -1,6 +1,5 @@
 // Import libraries
 import mongoose from "mongoose"
-import usersModel from "./users.js"
 
 // Create a schema
 const Schema = mongoose.Schema
@@ -13,9 +12,8 @@ let Expressions = new Schema({
   "emotion": {
     type: String,
   },
-  "userId": {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: usersModel
+  "email": {
+    type: String,
   }
 })
 

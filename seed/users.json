@@ -1,0 +1,14 @@
+[
+  {
+    "email": "rodrigo@yahoo.com",
+    "firstName": "Rodrigo",
+    "lastName": "Wanderley",
+    "password": "mypassword123"
+  },
+  {
+    "email": "ga@student.com",
+    "firstName": "General",
+    "lastName": "assembly",
+    "password": "ga9089"
+  }
+]

@@ -25,25 +25,24 @@ let expressionsController = {
       .find({ emotion: request.params.emotion })
       .then(result => response.json(result))
   },
-  getByUserId(request, response) {
+  getByEmail(request, response) {
     expressionsModel
-      .find({ userId: request.params.userId })
+      .find({ email: request.params.email })
       .then(result => response.json(result))
   },
   // Update (U)
-  updateByUserId(request, response) {
+  updateByEmail(request, response) {
     expressionsModel
       .updateOne(request.params, request.body, { new: true })
       .then(result => response.json(result))
   },
   // Delete (D)
-  // TODO: replace to deleteOne using the id
   deleteByDatetime(request, response) {
     expressionsModel
       .deleteOne(request.params)
       .then(result => response.json(result))
   },
-  deleteByUserId(request, response) {
+  deleteByEmail(request, response) {
     expressionsModel
       .deleteMany(request.params)
       .then(result => response.json(result))

@@ -12,13 +12,12 @@ router.post('/expressions', expressionsController.create);
 router.get('/expressions', expressionsController.getAll);
 router.get('/expressions/datetime/:datetime', expressionsController.getByDatetime);
 router.get('/expressions/emotion/:emotion', expressionsController.getByEmotion);
-router.get('/expressions/userid/:userid', expressionsController.getByUserId);
+router.get('/expressions/email/:email', expressionsController.getByEmail);
 // PUT
-router.put('/expressions/userid/:userid', expressionsController.updateByUserId);
+router.put('/expressions/email/:email', expressionsController.updateByEmail);
 // DELETE
-// TODO: delete first
 router.delete('/expressions/datetime/:datetime', expressionsController.deleteByDatetime);
-router.delete('/expressions/userid/:userid', expressionsController.deleteByUserId);
+router.delete('/expressions/email/:email', expressionsController.deleteByEmail);
 
 // Export controller
 export default router;
