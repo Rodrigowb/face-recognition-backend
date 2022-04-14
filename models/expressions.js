@@ -1,4 +1,3 @@
-// TODO: connect userID to the user model
 // Import libraries
 import mongoose from "mongoose"
 import usersModel from "./users.js"
