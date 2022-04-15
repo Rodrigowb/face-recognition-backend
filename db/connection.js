@@ -3,7 +3,7 @@ import mongoose from "mongoose"
 import chalk from "chalk"
 
 // Set the URI to production/development
-const MONGO_URI = process.env.DB_FACE_URL || "mongodb://127.0.0.1:27017/faceapi";
+const MONGO_URI = process.env.DB_URL || "mongodb://127.0.0.1:27017/faceapi";
 
 // Set to return the updated db when receives a request
 mongoose.set("returnOriginal", false);
