@@ -135,3 +135,7 @@ DELETE: `/users/email/:email`
 ## Delete data by password
 
 DELETE: `/users/password/:password`
+
+## Delete data by id
+
+DELETE: `/users/id/:id`
