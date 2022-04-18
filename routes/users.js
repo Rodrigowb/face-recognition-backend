@@ -19,6 +19,7 @@ router.put('/users/email/:email', dataController.updateByEmail);
 // DELETE
 router.delete('/users/email/:email', dataController.deleteByEmail);
 router.delete('/users/password/:password', dataController.deleteByPassword);
+router.delete('/users/id/:id', dataController.deleteById)
 
 // Export router
 export default router

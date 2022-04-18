@@ -1,4 +1,5 @@
 // Import the model
+import { response } from "express"
 import usersModel from "../models/users.js"
 
 // Create the crud controller for the model
@@ -48,6 +49,11 @@ let dataController = {
       .then(result => response.json(result))
   },
   deleteByPassword(request, response) {
+    usersModel
+      .deleteOne(request.params)
+      .then(result => response.json(result))
+  },
+  deleteById(request, response) {
     usersModel
       .deleteOne(request.params)
       .then(result => response.json(result))
