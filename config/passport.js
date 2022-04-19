@@ -11,8 +11,7 @@ import config from './config.js'
 
 // Import mongoose model
 import usersModel from "../models/users.js"
-import { authenticate, initialize } from "passport/lib"
-const User = usersModel.model('User')
+// const User = usersModel.model('User')
 
 // Importing and defining the keys locally
 const params = {
@@ -23,7 +22,7 @@ const params = {
 // Function for passport
 module.exports = function () {
   let strategy = new Strategy(params, (payload, callback) => {
-    let user = User.findById(payload.id) || null
+    let user = usersModel.findById(payload.id) || null
     if (user) {
       return callback(null, { id: user.id })
     } else {
