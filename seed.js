@@ -12,7 +12,7 @@ let parsedUsers = JSON.parse(rawUsers);
 
 // Seeding the two models of the database
 const insertData = async () => {
-  // await db.dropDatabase();
+  await db.dropDatabase();
   await expressionsModel.insertMany(parsedExpressions);
   await usersModel.insertMany(parsedUsers);
   db.close()

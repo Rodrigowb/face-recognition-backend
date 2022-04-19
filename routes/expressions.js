@@ -11,7 +11,6 @@ router.post('/expressions', expressionsController.create);
 // GET
 router.get('/expressions', expressionsController.getAll);
 router.get('/expressions/datetime/:datetime', expressionsController.getByDatetime);
-router.get('/expressions/emotion/:emotion', expressionsController.getByEmotion);
 router.get('/expressions/email/:email', expressionsController.getByEmail);
 // PUT
 router.put('/expressions/email/:email', expressionsController.updateByEmail);
