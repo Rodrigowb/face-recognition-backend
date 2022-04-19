@@ -31,3 +31,6 @@ db.on("connected", () => {
   })
 })
 
+// Export the app
+export default app;
+

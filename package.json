@@ -10,7 +10,17 @@
   },
   "scripts": {
     "start": "node server.js",
-    "seed": "node seed.js"
+    "seed": "node seed.js",
+    "test": "jest"
   },
-  "type": "module"
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
 }
