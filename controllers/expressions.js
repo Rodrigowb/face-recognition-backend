@@ -20,11 +20,6 @@ let expressionsController = {
       .find({ datetime: request.params.datetime })
       .then(result => response.json(result))
   },
-  getByEmotion(request, response) {
-    expressionsModel
-      .find({ emotion: request.params.emotion })
-      .then(result => response.json(result))
-  },
   getByEmail(request, response) {
     expressionsModel
       .find({ email: request.params.email })
