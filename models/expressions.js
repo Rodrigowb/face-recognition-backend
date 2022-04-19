@@ -9,9 +9,6 @@ let Expressions = new Schema({
   "datetime": {
     type: Date,
   },
-  "emotion": {
-    type: String,
-  },
   "email": {
     type: String,
   }
