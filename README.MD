@@ -78,10 +78,6 @@ GET: `/expressions`
 
 GET: `/expressions/datetime/:datetime`
 
-## Get the data by the emotion
-
-GET: `/expressions/emotion/:emotion`
-
 ## Get the data by email
 
 GET: `/expressions/email/:email`
